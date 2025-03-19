@@ -3,13 +3,13 @@ import gradio as gr
 
 import modules.ui as ui
 
-import extensions.webui_tavernai_charas.ui.native_fn as nfn
-from extensions.webui_tavernai_charas.services.tavernai_service import (
+import native_fn as nfn
+from services.tavernai_service import (
     TavernAIPreviewService,
     PreviewCardTracker,
     TavernAICardPreview,
 )
-from extensions.webui_tavernai_charas.ui.shared import components
+from shared import components
 
 
 CURRENT_PREVIEW_TRACKER = PreviewCardTracker()
